@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="myModule">
+<head>
+    <title>Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    <script src="Scripts/Script1.js"></script>
+
+</head>
+<body>
+    <div ng-controller="myController">
+        {{ message }}
+    </div>
+    <div ng-controller="myController">
+        <div>First Name : {{ employee.firstName }}</div>
+        <div>Last Name : {{ employee.lastName }}</div>
+        <div>Gender : {{ employee.gender}}</div>
+    </div>
+    <div>
+        10 + 20 = {{10+20}}
+    </div>
+    <div>
+        {{['David','Pam','Sara'][2]}}
+    </div>
+    <div>
+        {{1==1}}
+    </div>
+</body>
+</html>
